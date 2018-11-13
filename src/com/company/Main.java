@@ -12,9 +12,17 @@ public class Main {
         Scanner sc=new Scanner(System.in);
 	    if(args.length==0){
             System.out.println("Please specify a path");
-            folder=new File(sc.nextLine());
+            try{
+                folder = new File(sc.nextLine());
+            }catch(NullPointerException e){
+                System.out.println("The path specified couldn't be found");
+            }
 	    }else{
-	        folder=new File(args[0]);
+	        try{
+	            folder=new File(args[0]);
+	        }catch(NullPointerException e){
+                System.out.println("The path specified couldn't be found");
+            }
         }
         clearScreen();
         File[] listOfFiles=folder.listFiles();
