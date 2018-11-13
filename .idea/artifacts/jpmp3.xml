@@ -1,0 +1,12 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="jpmp3">
+    <output-path>$PROJECT_DIR$/out/artifacts/jpmp3</output-path>
+    <root id="archive" name="jpmp3.jar">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="extracted-dir" path="$USER_HOME$/Descargas/jl1.0.1.jar" path-in-jar="/" />
+      <element id="module-output" name="MP3player" />
+    </root>
+  </artifact>
+</component>
